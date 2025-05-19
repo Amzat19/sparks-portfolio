@@ -17,14 +17,14 @@ const EquipmentRentals = () => {
 
   return (
     <section className="bg-[#111111] pt-20 pb-16">
-      <h3 className="font-bold text-4xl text-[#E0E0E0] text-center pb-8">
+      <h3 className="font-bold text-2xl sm:text-4xl text-[#E0E0E0] text-center pb-8">
         Equipment Rentals
       </h3>
       <div className="flex items-center gap-8 w-4/5 mx-auto relative">
         {/* Custom Prev Button */}
         <button
           ref={prevRef}
-          className="absolute left-[-2rem] top-1/2 z-10 -translate-y-1/2 bg-[#00FFFF] hover:bg-[#00d5d5]  p-3 rounded-full shadow-lg transition"
+          className="absolute left-[-2rem] top-1/2 z-10 -translate-y-1/2 bg-[#00FFFF] hover:bg-[#00d5d5]  p-3 rounded-full shadow-lg transition hidden sm:block"
         >
           <ChevronLeft className="w-5 h-5 text-black" />
         </button>
@@ -79,7 +79,7 @@ const EquipmentRentals = () => {
         {/* Custom Next Button */}
         <button
           ref={nextRef}
-          className="absolute right-[-2rem] top-1/2 z-10 -translate-y-1/2 bg-[#00FFFF] hover:bg-[#00d5d5] p-3 rounded-full shadow-lg transition"
+          className="absolute right-[-2rem] top-1/2 z-10 -translate-y-1/2 bg-[#00FFFF] hover:bg-[#00d5d5] p-3 rounded-full shadow-lg transition hidden sm:block"
         >
           <ChevronRight className="w-5 h-5 text-black" />
         </button>

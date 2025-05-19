@@ -8,7 +8,7 @@ import Track4 from "../../public/images/track-4.png";
 const LatestTracks = () => {
   return (
     <section className="bg-black pb-16">
-      <h3 className="font-bold sm:text-4xl text-2xl text-[#E0E0E0] text-center pt-20 pb-8">
+      <h3 className="font-bold sm:text-4xl text-xl text-[#E0E0E0] text-center pt-20 pb-8">
         Latest Tracks & Performances
       </h3>
       <div className="bg-[#111111] rounded-lg w-4/5 mx-auto flex flex-col lg:flex-row justify-between items-start py-4">

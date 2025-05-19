@@ -13,7 +13,7 @@ const AboutMe = () => {
           height={400}
         />
         <div className="w-[90%] sm:w-[544px]">
-          <h3 className="text-[#FF00FF] text-bold text-[30px] sm:text-[36px] mb-8 font-bold">
+          <h3 className="text-[#FF00FF] text-bold text-[30px] sm:text-[36px] my-8 font-bold">
             About Me
           </h3>
           <p className="text-[#E0E0E0] text-base sm:text-[18px] mb-4 font-normal">
@@ -31,7 +31,7 @@ const AboutMe = () => {
         <Image
           src={AboutSparks}
           alt="Head shot of DJ Msparks"
-          className="sm:hidden mt-32"
+          className="sm:hidden my-32"
         />
       </div>
     </section>

@@ -1,3 +1,4 @@
+"use client";
 import Instagram from "@/svgs/instagram";
 import MailBox from "@/svgs/MAilBox";
 import Phone from "@/svgs/Phone";
@@ -6,19 +7,50 @@ import Spotify from "@/svgs/Spotify";
 import TikTok from "@/svgs/tiktok";
 import Twitter from "@/svgs/Twitter";
 import YouTube from "@/svgs/Youtube";
+import { useRef, useState } from "react";
+import emailjs from "emailjs-com";
 
 const Footer = () => {
+  const formRef = useRef(null);
+  const [status, setStatus] = useState("");
+
+  const sendEmail = (e: React.FormEvent) => {
+    e.preventDefault();
+    setStatus("Sending...");
+
+    emailjs
+      .sendForm(
+        "service_zdjzzfd",
+        "template_fh199pq",
+        formRef.current!,
+        "AezRE4hl2eZXfUJJ4"
+      )
+      .then(
+        () => {
+          setStatus("Message sent successfully!");
+        },
+        (error) => {
+          console.error(error);
+          setStatus("Failed to send message.");
+        }
+      );
+  };
   return (
     <footer className="pt-20 bg-[#111111] pb-4 font-montserrat">
       <h1 className="font-bold lg:text-4xl text-2xl text-[#E0E0E0] lg:text-center pl-[10%] lg:pl-0 mb-6">
         Get in Touch
       </h1>
       <div className="flex items-center justify-start gap-20 lg:w-[80%] mx-auto">
-        <div className="w-5/6 mx-auto lg:w-[544px] lg:mx-0">
+        <form
+          ref={formRef}
+          onSubmit={sendEmail}
+          className="w-5/6 mx-auto lg:w-[544px] lg:mx-0"
+        >
           <label className="font-medium text-base text-[#E0E0E0]">
             Name
             <input
               type="text"
+              name="name"
               className="border border-[#222222] bg-[#1A1A1A] rounded-md h-[50px] w-full mb-4"
             />
           </label>
@@ -26,17 +58,22 @@ const Footer = () => {
             Email
             <input
               type="text"
+              name="email"
               className="border border-[#222222] bg-[#1A1A1A] rounded-md h-[50px] w-full mb-4"
             />
           </label>
           <label className="font-medium text-base text-[#E0E0E0]">
             Message
-            <textarea className="border border-[#222222] bg-[#1A1A1A] rounded-md h-[150px] w-full mb-4" />
+            <textarea
+              name="message"
+              className="border border-[#222222] bg-[#1A1A1A] rounded-md h-[150px] w-full mb-4"
+            />
           </label>
           <button className="bg-[#FF00FF] text-white text-base font-semibold text-center py-2 w-full rounded-lg mb-6">
             Send Message
           </button>
-        </div>
+          {status && <p className="text-sm text-gray-400 mt-2">{status}</p>}
+        </form>
         <div className="w-[544px] hidden lg:block self-start">
           <h3 className="font-semibold text-2xl text-[#E0E0E0]">
             Contact Information
