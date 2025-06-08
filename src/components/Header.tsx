@@ -21,11 +21,24 @@ const Header = () => {
 
       {/* Desktop */}
       <div className="hidden sm:flex gap-4 items-center">
-        <span className="font-medium text-base">Bio</span>
-        <span className="font-medium text-base">Listen</span>
-        <span className="font-medium text-base">Events</span>
-        <span className="font-medium text-base">Equipments</span>
-        <span className="font-medium text-base">Contact</span>
+        <a href="#bio" className="font-medium text-base">
+          Bio
+        </a>
+        <a href="#listen" className="font-medium text-base">
+          Listen
+        </a>
+        <a href="#gallery" className="font-medium text-base">
+          Gallery
+        </a>
+        <a href="#events" className="font-medium text-base">
+          Events
+        </a>
+        <a href="#equipments" className="font-medium text-base">
+          Equipments
+        </a>
+        <a href="#contact" className="font-medium text-base">
+          Contact
+        </a>
       </div>
 
       {/* Mobile Sidebar */}
@@ -45,11 +58,24 @@ const Header = () => {
 
               {/* Menu Items */}
               <nav className="flex flex-col gap-4 text-lg font-medium">
-                <span onClick={() => setMenuOpen(false)}>Bio</span>
-                <span onClick={() => setMenuOpen(false)}>Listen</span>
-                <span onClick={() => setMenuOpen(false)}>Events</span>
-                <span onClick={() => setMenuOpen(false)}>Equipments</span>
-                <span onClick={() => setMenuOpen(false)}>Contact</span>
+                <a href="#bio" onClick={() => setMenuOpen(false)}>
+                  Bio
+                </a>
+                <a href="#listen" onClick={() => setMenuOpen(false)}>
+                  Listen
+                </a>
+                <a href="#gallery" onClick={() => setMenuOpen(false)}>
+                  Gallery
+                </a>
+                <a href="#events" onClick={() => setMenuOpen(false)}>
+                  Events
+                </a>
+                <a href="#equipments" onClick={() => setMenuOpen(false)}>
+                  Equipments
+                </a>
+                <a href="#contact" onClick={() => setMenuOpen(false)}>
+                  Contact
+                </a>
               </nav>
             </div>
             <p className="text-xs text-gray-400">© DJ MSPARKS</p>

@@ -1,36 +1,36 @@
 "use client";
 
-import Image from "next/image";
-import { Swiper, SwiperSlide } from "swiper/react";
-import { Navigation, Pagination } from "swiper/modules";
+// import Image from "next/image";
+// import { Swiper, SwiperSlide } from "swiper/react";
+// import { Navigation, Pagination } from "swiper/modules";
 import "swiper/css";
 import "swiper/css/navigation";
 import "swiper/css/pagination";
 
-import EventImage from "../../public/images/event-1.png";
-import { useRef } from "react";
-import { ChevronLeft, ChevronRight } from "lucide-react";
+// import EventImage from "../../public/images/event-1.png";
+// import { useRef } from "react";
+// import { ChevronLeft, ChevronRight } from "lucide-react";
 
 const UpcomingEvents = () => {
-  const prevRef = useRef<HTMLButtonElement>(null);
-  const nextRef = useRef<HTMLButtonElement>(null);
+  // const prevRef = useRef<HTMLButtonElement>(null);
+  // const nextRef = useRef<HTMLButtonElement>(null);
 
   return (
-    <section className="bg-[#111111] pt-20 pb-16">
+    <section className="bg-[#111111] pt-20 pb-16" id="events">
       <h3 className="font-bold text-2xl sm:text-4xl text-[#E0E0E0] text-center pb-8">
         Upcoming Events
       </h3>
       <div className="flex items-center gap-8 w-4/5 mx-auto relative">
         {/* Custom Prev Button */}
-        <button
+        {/* <button
           ref={prevRef}
           className="absolute left-[-2rem] top-1/2 z-10 -translate-y-1/2 bg-[#FF00FF] hover:bg-[#e000e0] p-3 rounded-full shadow-lg transition hidden sm:block"
         >
           <ChevronLeft className="w-5 h-5 text-white" />
-        </button>
+        </button> */}
 
         {/* Swiper */}
-        <Swiper
+        {/* <Swiper
           modules={[Navigation, Pagination]}
           spaceBetween={20}
           slidesPerView={1}
@@ -77,15 +77,15 @@ const UpcomingEvents = () => {
                       <clipPath id="clipPath2505759806">
                         <path
                           d="M0 0L16 0L16 16L0 16L0 0Z"
-                          fill-rule="nonzero"
+                          fillRule="nonzero"
                           transform="matrix(1 0 0 1 -0 -0)"
                         />
                       </clipPath>
                     </defs>
-                    <g clip-path="url(#clipPath2505759806)">
+                    <g clipPath="url(#clipPath2505759806)">
                       <path
                         d="M5.38338 15.6772C0.842813 9.09472 0 8.41916 0 6C0 2.68628 2.68628 0 6 0C9.31372 0 12 2.68628 12 6C12 8.41916 11.1572 9.09472 6.61662 15.6772C6.31866 16.1076 5.68131 16.1076 5.38338 15.6772ZM6 8.5C7.38072 8.5 8.5 7.38072 8.5 6C8.5 4.61928 7.38072 3.5 6 3.5C4.61928 3.5 3.5 4.61928 3.5 6C3.5 7.38072 4.61928 8.5 6 8.5Z"
-                        fill-rule="nonzero"
+                        fillRule="nonzero"
                         transform="matrix(1 0 0 1 2 0)"
                         fill="rgb(156, 163, 175)"
                       />
@@ -99,15 +99,18 @@ const UpcomingEvents = () => {
               </article>
             </SwiperSlide>
           ))}
-        </Swiper>
+        </Swiper> */}
+        <p className="text-white text-2xl font-semibold text-center w-full">
+          No events now... Coming Soon!
+        </p>
 
         {/* Custom Next Button */}
-        <button
+        {/* <button
           ref={nextRef}
           className="absolute right-[-2rem] top-1/2 z-10 -translate-y-1/2 bg-[#FF00FF] hover:bg-[#e000e0] p-3 rounded-full shadow-lg transition hidden sm:block"
         >
           <ChevronRight className="w-5 h-5 text-white" />
-        </button>
+        </button> */}
       </div>
     </section>
   );

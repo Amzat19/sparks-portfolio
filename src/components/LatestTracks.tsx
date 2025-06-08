@@ -7,7 +7,7 @@ import Track4 from "../../public/images/track-4.png";
 
 const LatestTracks = () => {
   return (
-    <section className="bg-black pb-16">
+    <section className="bg-black pb-16" id="listen">
       <h3 className="font-bold sm:text-4xl text-xl text-[#E0E0E0] text-center pt-20 pb-8">
         Latest Tracks & Performances
       </h3>
