@@ -4,7 +4,7 @@ import MailBox from "@/svgs/MAilBox";
 import Phone from "@/svgs/Phone";
 import SnapChat from "@/svgs/Snapchat";
 import SoundCloud from "@/svgs/SoundCloud";
-import Spotify from "@/svgs/Spotify";
+// import Spotify from "@/svgs/Spotify";
 import TikTok from "@/svgs/tiktok";
 import Twitter from "@/svgs/Twitter";
 import YouTube from "@/svgs/Youtube";
@@ -75,7 +75,10 @@ const Footer = () => {
           </button>
           {status && <p className="text-sm text-gray-400 mt-2">{status}</p>}
         </form> */}
-        <button className="bg-[#FF00FF] text-white text-base font-semibold text-center py-2 rounded-lg mb-6 h-20 w-3/5 mx-auto">
+        <button
+          className="bg-[#FF00FF] text-white text-base font-semibold text-center py-2 rounded-lg mb-6 h-20 w-3/5 mx-auto cursor-pointer"
+          onClick={() => window.open("https://wa.me/17048310677", "_blank")}
+        >
           Send Message to DJ Msparks
         </button>
         <div className="w-[544px] hidden lg:block self-start">
@@ -136,7 +139,10 @@ const Footer = () => {
               >
                 <TikTok />
               </span>
-              <span>
+              <span
+                className="cursor-pointer"
+                onClick={() => window.open("https://x.com/djmsparks", "_blank")}
+              >
                 <Twitter />
               </span>
               <span
@@ -153,12 +159,55 @@ const Footer = () => {
       </div>
 
       <div className="flex items-center justify-center gap-4 pb-6 lg:hidden">
-        <Instagram />
-        <SoundCloud />
-        <Spotify />
-        <TikTok />
-        <Twitter />
-        <YouTube />
+        <span
+          className="cursor-pointer"
+          onClick={() =>
+            window.open("http://www.instagram.com/dj_msparks_", "_blank")
+          }
+        >
+          <Instagram />
+        </span>
+        <span
+          className="cursor-pointer"
+          onClick={() =>
+            window.open("https://soundcloud.com/olujide-muyiwa", "_blank")
+          }
+        >
+          <SoundCloud />
+        </span>
+        <span
+          onClick={() =>
+            window.open("https://snapchat.com/t/MTYyGy1q", "_blank")
+          }
+          className="cursor-pointer h-8 w-8"
+        >
+          <SnapChat />
+        </span>
+        <span
+          onClick={() =>
+            window.open(
+              "https://www.tiktok.com/@msparks__?_t=ZN-8whDg87VoBi&_r=1",
+              "_blank"
+            )
+          }
+          className="cursor-pointer"
+        >
+          <TikTok />
+        </span>
+        <span
+          className="cursor-pointer"
+          onClick={() => window.open("https://x.com/djmsparks", "_blank")}
+        >
+          <Twitter />
+        </span>
+        <span
+          className="cursor-pointer"
+          onClick={() =>
+            window.open("http://youtube.com/@dj-msparks", "_blank")
+          }
+        >
+          <YouTube />
+        </span>
       </div>
       <div className="w-full bg-[#111111] h-[40px] mt-6">
         <p className="text-center font-normal text-base text-[#9CA3AF]">

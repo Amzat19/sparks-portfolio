@@ -84,7 +84,12 @@ const EquipmentRentals = () => {
                 {/* <span className="font-bold lg:text-[20px] text-base text-[#00FFFF] pt-4 pl-6 block">
                   $300/day
                 </span> */}
-                <button className="w-4/5 border block border-[#00FFFF] text-[#E0E0E0] font-medium text-base rounded-lg text-center py-2 mx-auto my-6">
+                <button
+                  className="w-4/5 border block border-[rgb(0,255,255)] text-[#E0E0E0] font-medium text-base rounded-lg text-center py-2 mx-auto my-6 cursor-pointer"
+                  onClick={() =>
+                    window.open("https://wa.me/17048310677", "_blank")
+                  }
+                >
                   Request Rental
                 </button>
               </article>
