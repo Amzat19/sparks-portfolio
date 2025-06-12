@@ -9,21 +9,21 @@ const LatestTracks = () => {
   return (
     <section className="bg-black pb-16" id="listen">
       <h3 className="font-bold sm:text-4xl text-xl text-[#E0E0E0] text-center pt-20 pb-8">
-        Latest Tracks & Performances
+        Mixtapes & Playlists
       </h3>
       <div className="bg-[#111111] rounded-lg w-4/5 mx-auto flex flex-col lg:flex-row justify-between items-start py-4">
         <div className="w-full lg:w-[80%] sm:max-w-[552px]">
           <p className="font-semibold text-2xl text-[#E0E0E0] pl-[10%] py-4">
-            Featured Mix
+            Playlists Arena
           </p>
           <div className="flex gap-4 items-center bg-[#1A1A1A] rounded-lg p-4 w-4/5 mx-auto">
             <Image src={PlayButton} alt="Play button" className="w-12 h-12" />
             <div className="flex flex-col">
               <span className="font-semibold text-base text-[#E0E0E0]">
-                Summer Vibes 2024
+                Msparks Vibezzz
               </span>
               <span className="font-normal text-sm text-[#9CA3AF]">
-                2:45:30
+                Enter the realm
               </span>
             </div>
           </div>

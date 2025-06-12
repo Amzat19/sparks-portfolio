@@ -71,7 +71,7 @@ const EquipmentRentals = () => {
                 <Image
                   src={item.image}
                   alt="Event Preview"
-                  className="w-full h-[320px]"
+                  className="w-full h-[320px] object-center object-cover"
                   width={300}
                   height={250}
                 />
