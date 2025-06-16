@@ -22,7 +22,7 @@ const Gallery = () => {
     "/images/gallery/gallery-5.jpg",
     "/images/gallery/gallery-15.jpg",
     "/images/gallery/gallery-17.jpg",
-    "/images/gallery/gallery-18.jpg",
+    "/images/gallery/gallery-21.jpg",
     "/images/gallery/gallery-3.jpg",
     "/images/gallery/gallery-19.jpg",
     "/images/gallery/gallery-20.jpg",
@@ -70,7 +70,7 @@ const Gallery = () => {
               width={400}
               height={300}
               alt={`Event image ${index + 1}`}
-              className="w-full h-[300px] object-cover rounded-lg"
+              className="w-full h-[300px] object-cover object-top rounded-lg"
             />
           ))}
         </div>

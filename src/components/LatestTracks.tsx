@@ -1,9 +1,10 @@
+"use client";
 import Image from "next/image";
 import PlayButton from "../../public/images/play-button.png";
-import Track1 from "../../public/images/mixtapes-img-1.jpg";
-import Track2 from "../../public/images/mixtapes-img-2.jpg";
-import Track3 from "../../public/images/mixtapes-img-3.jpg";
-import Track4 from "../../public/images/mixtapes-img-4.jpg";
+import Track1 from "../../public/images/mixtapes-img-5.jpg";
+import Track2 from "../../public/images/mixtapes-img-6.jpg";
+import Track3 from "../../public/images/mixtapes-img-7.jpg";
+import Track4 from "../../public/images/mixtapes-img-8.png";
 
 const LatestTracks = () => {
   return (
@@ -17,7 +18,14 @@ const LatestTracks = () => {
             Playlists Arena
           </p>
           <div className="flex gap-4 items-center bg-[#1A1A1A] rounded-lg p-4 w-4/5 mx-auto">
-            <Image src={PlayButton} alt="Play button" className="w-12 h-12" />
+            <Image
+              src={PlayButton}
+              alt="Play button"
+              className="w-12 h-12 cursor-pointer"
+              onClick={() =>
+                window.open("https://linktr.ee/djmsparks", "_blank")
+              }
+            />
             <div className="flex flex-col">
               <span className="font-semibold text-base text-[#E0E0E0]">
                 Msparks Vibezzz
@@ -32,22 +40,22 @@ const LatestTracks = () => {
           <Image
             src={Track1}
             alt="Track preview"
-            className="w-[173px] h-[91px] lg:w-[268px] lg:h-[150px] rounded-md object-cover object-center"
+            className="w-[173px] h-[91px] lg:w-[268px] lg:h-[190px] rounded-md object-cover object-center"
           />
           <Image
             src={Track2}
             alt="Track preview"
-            className="w-[173px] h-[91px] lg:w-[268px] lg:h-[150px] rounded-md object-cover object-center"
+            className="w-[173px] h-[91px] lg:w-[268px] lg:h-[190px] rounded-md object-cover object-center"
           />{" "}
           <Image
             src={Track3}
             alt="Track preview"
-            className="w-[173px] h-[91px] lg:w-[268px] lg:h-[150px] rounded-md object-cover object-center"
+            className="w-[173px] h-[91px] lg:w-[268px] lg:h-[190px] rounded-md object-cover object-center"
           />{" "}
           <Image
             src={Track4}
             alt="Track preview"
-            className="w-[173px] h-[91px] lg:w-[268px] lg:h-[150px] rounded-md object-cover object-center"
+            className="w-[173px] h-[91px] lg:w-[268px] lg:h-[190px] rounded-md object-cover object-center"
           />
         </div>
       </div>
