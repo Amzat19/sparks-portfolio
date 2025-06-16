@@ -1,9 +1,9 @@
 import Image from "next/image";
 import PlayButton from "../../public/images/play-button.png";
-import Track1 from "../../public/images/track-1.png";
-import Track2 from "../../public/images/track-2.png";
-import Track3 from "../../public/images/track-3.png";
-import Track4 from "../../public/images/track-4.png";
+import Track1 from "../../public/images/mixtapes-img-1.jpg";
+import Track2 from "../../public/images/mixtapes-img-2.jpg";
+import Track3 from "../../public/images/mixtapes-img-3.jpg";
+import Track4 from "../../public/images/mixtapes-img-4.jpg";
 
 const LatestTracks = () => {
   return (
@@ -23,7 +23,7 @@ const LatestTracks = () => {
                 Msparks Vibezzz
               </span>
               <span className="font-normal text-sm text-[#9CA3AF]">
-                Enter the realm
+                Cick Play and Enter the realm
               </span>
             </div>
           </div>
@@ -32,22 +32,22 @@ const LatestTracks = () => {
           <Image
             src={Track1}
             alt="Track preview"
-            className="w-[173px] h-[91px] lg:w-[268px] lg:h-[150px]"
+            className="w-[173px] h-[91px] lg:w-[268px] lg:h-[150px] rounded-md object-cover object-center"
           />
           <Image
             src={Track2}
             alt="Track preview"
-            className="w-[173px] h-[91px] lg:w-[268px] lg:h-[150px]"
+            className="w-[173px] h-[91px] lg:w-[268px] lg:h-[150px] rounded-md object-cover object-center"
           />{" "}
           <Image
             src={Track3}
             alt="Track preview"
-            className="w-[173px] h-[91px] lg:w-[268px] lg:h-[150px]"
+            className="w-[173px] h-[91px] lg:w-[268px] lg:h-[150px] rounded-md object-cover object-center"
           />{" "}
           <Image
             src={Track4}
             alt="Track preview"
-            className="w-[173px] h-[91px] lg:w-[268px] lg:h-[150px]"
+            className="w-[173px] h-[91px] lg:w-[268px] lg:h-[150px] rounded-md object-cover object-center"
           />
         </div>
       </div>

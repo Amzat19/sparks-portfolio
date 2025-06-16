@@ -55,54 +55,62 @@ const Footer = () => {
               className="border border-[#222222] bg-[#1A1A1A] rounded-md h-[50px] w-full mb-4 px-2"
             />
           </label>
-          <label className="font-medium text-base text-[#E0E0E0]">
-            Phone Number
-            <input
-              type="tel"
-              name="tel_number"
-              className="border border-[#222222] bg-[#1A1A1A] rounded-md h-[50px] w-full mb-4 px-2"
-            />
-          </label>
-          <label className="font-medium text-base text-[#E0E0E0]">
-            Email
-            <input
-              type="text"
-              name="email"
-              className="border border-[#222222] bg-[#1A1A1A] rounded-md h-[50px] w-full mb-4 px-2"
-            />
-          </label>
-          <label className="font-medium text-base text-[#E0E0E0]">
-            Event Type
-            <input
-              type="tel"
-              name="event_type"
-              className="border border-[#222222] bg-[#1A1A1A] rounded-md h-[50px] w-full mb-4 px-2"
-            />
-          </label>
-          <label className="font-medium text-base text-[#E0E0E0]">
-            Event Address
-            <input
-              type="text"
-              name="event_address"
-              className="border border-[#222222] bg-[#1A1A1A] rounded-md h-[50px] w-full mb-4 px-2"
-            />
-          </label>
-          <label className="font-medium text-base text-[#E0E0E0]">
-            Date of Event(Type your date)
-            <input
-              type="text"
-              name="event_date"
-              className="border border-[#222222] bg-[#1A1A1A] rounded-md h-[50px] w-full mb-4 px-2"
-            />
-          </label>
-          <label className="font-medium text-base text-[#E0E0E0]">
-            Delivery/Pick Up
-            <input
-              type="text"
-              name="delivery_type"
-              className="border border-[#222222] bg-[#1A1A1A] rounded-md h-[50px] w-full mb-4 px-2"
-            />
-          </label>
+
+          <div className="flex flex-col lg:flex-row gap-4">
+            <label className="font-medium text-base text-[#E0E0E0]">
+              Phone Number
+              <input
+                type="tel"
+                name="tel_number"
+                className="border border-[#222222] bg-[#1A1A1A] rounded-md h-[50px] w-full mb-4 px-2"
+              />
+            </label>
+            <label className="font-medium text-base text-[#E0E0E0]">
+              Email
+              <input
+                type="text"
+                name="email"
+                className="border border-[#222222] bg-[#1A1A1A] rounded-md h-[50px] w-full mb-4 px-2"
+              />
+            </label>
+          </div>
+          <div className="flex flex-col lg:flex-row gap-4">
+            <label className="font-medium text-base text-[#E0E0E0]">
+              Event Type
+              <input
+                type="tel"
+                name="event_type"
+                className="border border-[#222222] bg-[#1A1A1A] rounded-md h-[50px] w-full mb-4 px-2"
+              />
+            </label>
+            <label className="font-medium text-base text-[#E0E0E0]">
+              Event Address
+              <input
+                type="text"
+                name="event_address"
+                className="border border-[#222222] bg-[#1A1A1A] rounded-md h-[50px] w-full mb-4 px-2"
+              />
+            </label>
+          </div>
+          <div className="flex flex-col lg:flex-row gap-4">
+            <label className="font-medium text-base text-[#E0E0E0]">
+              Date of Event(Type your date)
+              <input
+                type="text"
+                name="event_date"
+                className="border border-[#222222] bg-[#1A1A1A] rounded-md h-[50px] w-full mb-4 px-2"
+              />
+            </label>
+            <label className="font-medium text-base text-[#E0E0E0]">
+              Delivery/Pick Up
+              <input
+                type="text"
+                name="delivery_type"
+                className="border border-[#222222] bg-[#1A1A1A] rounded-md h-[50px] w-full mb-4 px-2"
+              />
+            </label>
+          </div>
+
           <label className="font-medium text-base text-[#E0E0E0]">
             Message
             <textarea
