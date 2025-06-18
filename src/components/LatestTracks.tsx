@@ -40,7 +40,7 @@ const LatestTracks = () => {
           <Image
             src={Track1}
             alt="Track preview"
-            className="w-[173px] h-[91px] lg:w-[268px] lg:h-[190px] rounded-md object-cover object-center"
+            className="w-[173px] h-[91px] lg:w-[268px] lg:h-[190px] rounded-md object-cover object-top"
           />
           <Image
             src={Track2}
