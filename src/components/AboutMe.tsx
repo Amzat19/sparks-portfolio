@@ -1,5 +1,5 @@
 import Image from "next/image";
-import AboutSparks from "../../public/images/about-sparks.png";
+import AboutSparks from "../../public/images/new-about-me.jpg";
 
 const AboutMe = () => {
   return (
@@ -8,7 +8,7 @@ const AboutMe = () => {
         <Image
           src={AboutSparks}
           alt="Head shot of DJ Msparks"
-          className="hidden sm:block mb-16 xl:mb-0"
+          className="hidden sm:block mb-16 xl:mb-0 rounded-full"
           width={400}
           height={400}
         />
@@ -85,7 +85,7 @@ const AboutMe = () => {
         <Image
           src={AboutSparks}
           alt="Head shot of DJ Msparks"
-          className="sm:hidden my-32"
+          className="sm:hidden my-32 rounded-full"
         />
       </div>
     </section>

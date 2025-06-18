@@ -1,6 +1,6 @@
 const HeroBanner = () => {
   return (
-    <section className="bg-black h-[603px] sm:h-[983px] bg-[url('/images/new-bio-img.jpg')] bg-cover bg-no-repeat bg-center flex flex-col items-center justify-center">
+    <section className="bg-black h-[603px] sm:h-[983px] bg-[url('/images/sparks-hero.jpg')] bg-cover bg-no-repeat bg-center flex flex-col items-center justify-center">
       <div className="mx-auto w-[320px] sm:w-[523px] flex flex-col items-center justify-center h-full">
         <h2 className="font-black text-[44px] sm:text-[60px] text-white">
           DJ MSPARKS
