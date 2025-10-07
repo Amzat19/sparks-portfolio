@@ -78,7 +78,7 @@ const Footer = () => {
             <label className="font-medium text-base text-[#E0E0E0]">
               Event Type
               <input
-                type="tel"
+                type="text"
                 name="event_type"
                 className="border border-[#222222] bg-[#1A1A1A] rounded-md h-[50px] w-full mb-4 px-2"
               />
